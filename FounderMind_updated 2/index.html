@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FounderMind — AI Startup Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><img src="foundermind-logo.jpeg" alt="FounderMind logo"></div>
+        <div>
+          <h1>FounderMind</h1>
+          <span>Turn Ideas Into Impact</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-page="dashboard">⌂ <span>Dashboard</span></button>
+        <button class="nav-item" data-page="validate">✦ <span>Validate Idea</span></button>
+        <button class="nav-item" data-page="ideas">✧ <span>New Ideas</span></button>
+        <button class="nav-item" data-page="market">◫ <span>Market & Competition</span></button>
+        <button class="nav-item" data-page="funding">🏛 <span>Funding Navigator</span></button>
+        <button class="nav-item" data-page="planner">▣ <span>Funding Planner</span></button>
+        <button class="nav-item" data-page="action">◎ <span>Action Plan</span></button>
+        <button class="nav-item" data-page="history">◴ <span>History</span></button>
+        <button class="nav-item" data-page="reports">▤ <span>Reports</span></button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-page="guide">▥ <span>Founder Guide</span></button>
+        <button class="nav-item" data-page="settings">⚙ <span>Settings</span></button>
+      </div>
+
+      <div class="support-card">
+        <div class="support-icon">🚀</div>
+        <h3>Big ideas need the right support.</h3>
+        <p>Validate, plan, and prepare your startup journey.</p>
+        <button class="primary small" data-page="validate">Get Started →</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="search">
+          <span>⌕</span>
+          <input id="globalSearch" placeholder="Search ideas, reports, or schemes...">
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">♧</button>
+          <div class="avatar">FM</div>
+          <span>Founder</span>
+          <span>⌄</span>
+        </div>
+      </header>
+
+      <div id="toast" class="toast"></div>
+      <section id="page-dashboard" class="page active"></section>
+      <section id="page-validate" class="page"></section>
+      <section id="page-ideas" class="page"></section>
+      <section id="page-market" class="page"></section>
+      <section id="page-funding" class="page"></section>
+      <section id="page-planner" class="page"></section>
+      <section id="page-action" class="page"></section>
+      <section id="page-history" class="page"></section>
+      <section id="page-reports" class="page"></section>
+      <section id="page-guide" class="page"></section>
+      <section id="page-settings" class="page"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
